@@ -1,0 +1,154 @@
+.animation{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+/* .animation:nth-child(2){
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+} */
+
+@keyframes changeColor {
+   0% {background-color: rgba(255, 0, 0, 0.365); left: 0px; top:0px}
+   25%{background-color: rgba(255, 255, 0, 0.362); left: 500px; top: 0px;}
+   50%{background-color: rgba(0, 0, 255, 0.321); left: 500px; top: 500px;}
+   75%{background-color: rgba(0, 128, 0, 0.322); left: 0px; top: 500px;}
+   100%{background-color: rgba(255, 0, 0, 0.262); left: 0px; top: 0px;}
+}
+img{
+   width: 100%;
+}
+/* .fixed{
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+}
+
+.relative{
+   position: relative;
+   width: 400px;
+   height: 200px;
+   border: 3px solid green;
+}
+
+
+.absoulte{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border : 3px solid black;
+    bottom: 0;
+    right: 0;
+} */
+
+/* div{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    font-weight: bold;
+    animation: myMove 2s infinite;;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 { animation-timing-function: ease-out;}
+#div5 { animation-timing-function: ease-in-out;}
+
+@keyframes myMove {
+    from { left: 100px;}
+    to {left: 300px;}
+} */
+
+.circle{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: relative;
+    animation-name: round;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+}
+
+@keyframes round {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+    /* 0% {transform: rotate(0deg);}
+    25%{transform: rotate(45deg);}
+    50%{transform: rotate(90deg);}
+    75%{transform: rotate(125deg);}
+    100%{transform: rotate(170deg);} */
+
+}
+.line1{
+    width: 100%;
+    background-color: black;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(0deg);
+}
+.line2{
+    width: 100%;
+    background-color: black;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.line3{
+    width: 100%;
+    background-color: black;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.line4{
+    width: 100%;
+    background-color: black;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(125deg);
+}
+.small_circle{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: rotate(125deg);
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
